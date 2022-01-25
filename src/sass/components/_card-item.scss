@@ -1,0 +1,97 @@
+.card-item {
+  @media (max-width: $mobile-brakepoint) {
+   height: 160px;    
+   margin: 25px 0; 
+  } 
+ 
+    &__image {
+     position: absolute;
+    right: 0;
+    margin-right: 20px; 
+    }
+
+    .card-item--body {
+       background-color: $dark-blue;
+       border-radius: $border-radius-body;
+       height: 80%;  
+       width: 100%; 
+       bottom: 0;
+       position: absolute;
+       color: $white;
+       padding: 35px 35px; 
+
+         @media (max-width: $mobile-brakepoint) {
+           padding: 20px 20px;  
+           height: 75%;
+           width: 327px;    
+         }
+
+         &:hover {
+          background-color: $light-blue;
+          cursor: pointer;
+          transition: all .4s;
+        }    
+    
+      }
+   
+     .ellipsis-img {
+       right: 0;
+       position: absolute;
+       margin-right: 20px;
+     }  
+    
+      .card-details { 
+        @media (max-width: $mobile-brakepoint) {       
+        margin-top: 20px;                  
+    }
+
+
+    & > p:first-child {   
+      margin-top: 15px;   
+      font-size: 56px;
+      padding-bottom: 10px;
+
+          @media (max-width: $mobile-brakepoint) {
+            margin-top: 30px;
+              font-size: 32px;
+              margin-top: 5px;
+              display: inline;               
+          }      
+    }
+
+      & > p:last-child {
+      color: $gray;
+      font-size: 15px;   
+      display: inline; 
+          @media (max-width: $mobile-brakepoint) {
+            float: right;  
+            line-height: 30px;            
+        }        
+     }
+  }
+     
+  &--work {
+    @include card-content ($light-red1);  
+  }
+
+  &--play {
+    @include card-content ($soft-blue); 
+  }
+
+  &--study {
+    @include card-content ($light-red2);  
+  }
+
+  &--exercise {
+    @include card-content ($lime-green);    
+  }
+
+  &--social {
+    @include card-content ($violet);    
+  }
+
+  &--self-care {
+    @include card-content ($soft-orange);   
+  }
+
+}

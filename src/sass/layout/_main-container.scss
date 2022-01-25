@@ -1,0 +1,12 @@
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 18px;  
+  font-size: 112.5%;  //18px(project value) : 16px(default value) = 112.5%;
+
+  @media (max-width: $mobile-brakepoint) {
+    margin: 15px 15px;
+    display: block;      
+  }
+} 

@@ -1,0 +1,11 @@
+@mixin card-content($bgr-color) {
+  background-color: $bgr-color; 
+  border-radius: $border-radius; 
+  position: relative;
+    //FOR MOBILE VERSION
+      @media (max-width: $mobile-brakepoint) {      
+        width: 327px;  
+      }
+}
+
+
