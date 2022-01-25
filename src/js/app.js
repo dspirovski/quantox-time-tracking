@@ -43,6 +43,5 @@ window.addEventListener('load', async () => {
   document.getElementById('dailyBtn').addEventListener('click', () => getCardData('daily'));
   document.getElementById('weeklyBtn').addEventListener('click', () => getCardData('weekly'));
   document.getElementById('monthlyBtn').addEventListener('click', () => getCardData('monthly'));
-
   document.getElementById(`${period}Btn`).classList = ['report-card-active'];
 });
